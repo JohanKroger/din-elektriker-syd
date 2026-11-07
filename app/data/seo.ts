@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { company, siteUrl } from "./company";
+import { company, navigation, siteUrl } from "./company";
 
 export function pageMeta(
 	heading: string,
@@ -8,6 +8,9 @@ export function pageMeta(
 ): Metadata {
 	const url = siteUrl ? siteUrl + path : undefined;
 	return {
+		...(path !== "/" && {
+			title: navigation.find(([href]) => href === path)?.[1] ?? heading,
+		}),
 		description,
 		alternates: url ? { canonical: url } : undefined,
 		openGraph: {
