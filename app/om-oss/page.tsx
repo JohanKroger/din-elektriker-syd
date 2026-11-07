@@ -1,4 +1,3 @@
-import { KitchenPhoto } from "../components/KitchenPhoto";
 import { Area, ContactSection, Intro } from "../components/Sections";
 import { pageMeta } from "../data/seo";
 import { company } from "../data/company";
@@ -16,10 +15,11 @@ export default function About() {
 				arbete.
 			</Intro>
 			<section className="wrap story">
-				<KitchenPhoto />
 				<div>
 					<p className="kicker">Arbetssätt</p>
 					<h2>Först ett samtal, sedan en lösning.</h2>
+				</div>
+				<div>
 					<p>
 						Med 15 år inom service och renovering har vi erfarenhet av arbete i
 						befintliga bostäder och lokaler. Det börjar med att du berättar vad
