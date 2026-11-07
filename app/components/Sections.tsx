@@ -1,3 +1,4 @@
+import { ExternalLink } from "./ExternalLink";
 import Image from "next/image";
 import { company, emailHref, navigation, phoneHref } from "../data/company";
 import type { Project } from "../data/projects";
@@ -117,9 +118,9 @@ export function Footer() {
 				<div>
 					<strong>Registrerat elföretag</strong>
 					<p>Kontrollera företagets registrering hos Elsäkerhetsverket.</p>
-					<a className="text-link" href={company.registry}>
-						Se vår registrering <Icon name="diagonal" size={15} />
-					</a>
+					<ExternalLink href={company.registry}>
+						Se vår registrering
+					</ExternalLink>
 				</div>
 			</div>
 			<div className="wrap copyright">

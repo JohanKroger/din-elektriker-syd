@@ -1,3 +1,4 @@
+import { ExternalLink } from "../components/ExternalLink";
 import { ContactSection, Intro } from "../components/Sections";
 import { Icon } from "../components/Icon";
 import { services } from "../data/services";
@@ -53,12 +54,9 @@ export default function ServicesPage() {
 								exempelvis elarbeten vid en renovering. Material och resor ingår
 								inte.
 							</p>
-							<a
-								className="text-link"
-								href="https://www.skatteverket.se/foretag/skatterochavdrag/rotochrut/gerarbetetratttillrotavdrag.4.5c1163881590be297b5173bf.html"
-							>
-								Se godkända rotarbeten hos Skatteverket ↗
-							</a>
+							<ExternalLink href="https://www.skatteverket.se/foretag/skatterochavdrag/rotochrut/gerarbetetratttillrotavdrag.4.5c1163881590be297b5173bf.html">
+								Se godkända rotarbeten hos Skatteverket
+							</ExternalLink>
 						</div>
 						<div>
 							<h3>Grön teknik för laddbox</h3>
@@ -68,12 +66,9 @@ export default function ServicesPage() {
 								arbete och material. Samma arbete kan inte ligga till grund för
 								både grön teknik och ROT.
 							</p>
-							<a
-								className="text-link"
-								href="https://www.skatteverket.se/privat/fastigheterochbostad/gronteknik/safungerarskattereduktionenforgronteknik.4.676f4884175c97df4192870.html"
-							>
-								Läs villkoren för grön teknik hos Skatteverket ↗
-							</a>
+							<ExternalLink href="https://www.skatteverket.se/privat/fastigheterochbostad/gronteknik/safungerarskattereduktionenforgronteknik.4.676f4884175c97df4192870.html">
+								Läs villkoren för grön teknik hos Skatteverket
+							</ExternalLink>
 						</div>
 					</div>
 				</div>

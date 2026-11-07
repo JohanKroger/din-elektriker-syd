@@ -1,3 +1,4 @@
+import { ExternalLink } from "../components/ExternalLink";
 import { Area, ContactSection, Intro } from "../components/Sections";
 import { pageMeta } from "../data/seo";
 import { company } from "../data/company";
@@ -34,9 +35,9 @@ export default function About() {
 						Vår elinstallatör är auktoriserad elinstallatör. Företaget Din
 						Elektriker Syd AB är registrerat hos Elsäkerhetsverket.
 					</p>
-					<a className="text-link" href={company.registry}>
-						Se vår registrering hos Elsäkerhetsverket ↗
-					</a>
+					<ExternalLink href={company.registry}>
+						Se vår registrering hos Elsäkerhetsverket
+					</ExternalLink>
 				</div>
 			</section>
 			<Area />
