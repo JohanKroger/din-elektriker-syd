@@ -19,7 +19,7 @@ export function pageMeta(
 			type: "website",
 			siteName: company.name,
 			url,
-			images: siteUrl ? [`${siteUrl}/elcentral.webp`] : undefined,
+			images: siteUrl ? [`${siteUrl}/logotyp.png`] : undefined,
 		},
 	};
 }

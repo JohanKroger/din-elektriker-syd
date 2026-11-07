@@ -167,33 +167,12 @@ footer a:hover,
 	isolation: isolate;
 	position: relative;
 }
-.hero-photo {
-	position: absolute;
-	inset: 0 0 0 45%;
-	z-index: -1;
-}
-.hero-photo img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: 50% 45%;
-}
-.hero-photo::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background: linear-gradient(
-		90deg,
-		#10211a 0%,
-		rgba(16, 33, 26, 0.59) 22%,
-		rgba(9, 22, 16, 0.08) 65%
-	);
-}
+
 .hero-inner {
 	padding-block: clamp(4.2rem, 6.6vw, 7.5rem);
 }
 .hero-copy {
-	max-width: 58%;
+	max-width: 56rem;
 }
 .kicker {
 	gap: 0.6rem;
@@ -345,13 +324,6 @@ footer a:hover,
 }
 .story-bg {
 	background: var(--wash);
-}
-.story img {
-	width: 100%;
-	height: auto;
-	aspect-ratio: 3 / 2;
-	object-fit: cover;
-	border-radius: 6px;
 }
 .story h3 {
 	margin-top: 1.7rem;
@@ -531,20 +503,7 @@ footer {
 	.logo {
 		width: 8.4rem;
 	}
-	.hero-photo {
-		inset: 0;
-	}
-	.hero-photo img {
-		object-position: 75% 40%;
-	}
-	.hero-photo::after {
-		background: linear-gradient(
-			90deg,
-			rgba(11, 28, 19, 0.95),
-			rgba(11, 28, 19, 0.8) 75%,
-			rgba(11, 28, 19, 0.7)
-		);
-	}
+
 	.hero-inner {
 		padding-block: 3.8rem;
 	}
@@ -559,14 +518,14 @@ footer {
 	}
 	.actions {
 		flex-wrap: wrap;
-		gap: .5rem;
+		gap: 0.5rem;
 	}
 	.button {
 		padding-inline: 1rem;
 	}
 	.actions .button {
-		font-size: .88rem;
-		padding-inline: .8rem;
+		font-size: 0.88rem;
+		padding-inline: 0.8rem;
 	}
 	.trust-grid,
 	.split,

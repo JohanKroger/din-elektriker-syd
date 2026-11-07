@@ -1,5 +1,3 @@
-import { KitchenPhoto } from "./components/KitchenPhoto";
-import Image from "next/image";
 import { Icon } from "./components/Icon";
 import { Area, ContactSection, ProjectList } from "./components/Sections";
 import { phoneHref } from "./data/company";
@@ -20,15 +18,6 @@ export default function Home() {
 	return (
 		<>
 			<section className="hero">
-				<div className="hero-photo">
-					<Image
-						src="/elcentral.webp"
-						alt="Elcentral med huvudbrytare, dvärgbrytare och jordfelsbrytare"
-						width={1122}
-						height={1402}
-						priority
-					/>
-				</div>
 				<div className="wrap hero-inner">
 					<div className="hero-copy">
 						<p className="kicker light">
@@ -101,10 +90,11 @@ export default function Home() {
 			</section>
 			<section className="story-bg">
 				<div className="wrap story">
-					<KitchenPhoto />
 					<div>
 						<p className="kicker">Om företaget</p>
 						<h2>En elektriker som lyssnar.</h2>
+					</div>
+					<div>
 						<p>
 							När du anlitar oss går vi först igenom vad du vill förändra. Sedan
 							tittar vi på den befintliga elen och föreslår lösningar som passar
