@@ -181,13 +181,32 @@ footer a:hover,
 	transform: translateY(-50%) rotate(-24deg);
 	border-radius: 50%;
 	background:
-		radial-gradient(circle closest-side, transparent 49%, #80d69780 49.3%, #80d69780 52%, transparent 52.3%, transparent 64%, #a9e4b65c 64.3%, #a9e4b65c 65%, transparent 65.3%, transparent 81%, #90cda440 81.3%, #90cda440 81.6%, transparent 82%),
+		radial-gradient(
+			circle closest-side,
+			transparent 49%,
+			#80d69780 49.3%,
+			#80d69780 52%,
+			transparent 52.3%,
+			transparent 64%,
+			#a9e4b65c 64.3%,
+			#a9e4b65c 65%,
+			transparent 65.3%,
+			transparent 81%,
+			#90cda440 81.3%,
+			#90cda440 81.6%,
+			transparent 82%
+		),
 		linear-gradient(125deg, #8dda9b10, transparent 70%);
-	mask-image: conic-gradient(from 75deg, transparent 0deg 42deg, black 42deg 349deg, transparent 349deg);
+	mask-image: conic-gradient(
+		from 75deg,
+		transparent 0deg 42deg,
+		black 42deg 349deg,
+		transparent 349deg
+	);
 }
 .intro::after {
 	width: min(38vw, 35rem);
-	opacity: .55;
+	opacity: 0.55;
 }
 
 .hero-inner {
@@ -388,6 +407,7 @@ footer a:hover,
 .contact-section .contact-line {
 	border-color: #52705b;
 }
+.service-contact svg,
 .contact-section .contact-line svg,
 .intro .kicker {
 	color: var(--green);
@@ -426,7 +446,38 @@ footer {
 	font-size: 1.12rem;
 }
 .service-details {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) clamp(12rem, 18vw, 16rem);
+	column-gap: clamp(1.75rem, 4vw, 4rem);
 	padding-block: 2rem;
+}
+.service-list {
+	grid-area: 1 / 1;
+}
+.service-contact {
+	grid-area: 1 / 2;
+	position: sticky;
+	top: 1.5rem;
+	align-self: start;
+	z-index: 1;
+}
+.service-contact a {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	min-height: 48px;
+	padding: 1rem;
+	border: 1px solid #426e53;
+	border-radius: 0.6rem;
+	background: linear-gradient(115deg, #193629, #315741);
+	color: white;
+	box-shadow: 0 3px 10px #14291a14;
+}
+.service-contact a:hover {
+	background: #214530;
+}
+.service-contact svg:last-child {
+	margin-left: auto;
 }
 .service-details section {
 	scroll-margin-top: 1rem;
@@ -459,6 +510,24 @@ footer {
 	margin-block: 1rem;
 }
 @media (max-width: 900px) {
+	.service-details {
+		display: block;
+	}
+	.service-contact {
+		top: 73px;
+		padding-block: 0.4rem;
+		display: flex;
+		justify-content: flex-end;
+		background: white;
+		border-bottom: 1px solid var(--line);
+	}
+	.service-contact a {
+		padding: 0.5rem 0.85rem;
+		min-height: 44px;
+	}
+	.service-details section[id] {
+		scroll-margin-top: 4rem;
+	}
 	.header {
 		position: sticky;
 		top: 0;
@@ -508,12 +577,15 @@ footer {
 	}
 }
 @media (max-width: 650px) {
+	.service-contact {
+		top: 67px;
+	}
 	.hero::after,
 	.intro::after {
 		top: 12%;
 		right: -28%;
 		width: 72vw;
-		opacity: .28;
+		opacity: 0.28;
 	}
 	.wrap {
 		width: 89%;
