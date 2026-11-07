@@ -17,9 +17,13 @@ export default function ServicesPage() {
 			<div className="wrap service-details">
 				<aside className="service-contact" aria-label="Kontakt om tjänster">
 					<a href="/kontakt">
-						<Icon name="mail" />
-						<strong>Kontakta oss</strong>
-						<Icon name="arrow" size={18} />
+						<span>
+							<strong>Kontakta oss</strong>
+							<small>Telefon och e-post</small>
+						</span>
+						<span className="contact-arrow">
+							<Icon name="arrow" size={18} />
+						</span>
 					</a>
 				</aside>
 				<div className="service-list">

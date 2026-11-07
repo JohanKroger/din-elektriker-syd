@@ -178,31 +178,8 @@ footer a:hover,
 	aspect-ratio: 1;
 	top: 50%;
 	right: -8%;
-	transform: translateY(-50%) rotate(-24deg);
-	border-radius: 50%;
-	background:
-		radial-gradient(
-			circle closest-side,
-			transparent 49%,
-			#80d69780 49.3%,
-			#80d69780 52%,
-			transparent 52.3%,
-			transparent 64%,
-			#a9e4b65c 64.3%,
-			#a9e4b65c 65%,
-			transparent 65.3%,
-			transparent 81%,
-			#90cda440 81.3%,
-			#90cda440 81.6%,
-			transparent 82%
-		),
-		linear-gradient(125deg, #8dda9b10, transparent 70%);
-	mask-image: conic-gradient(
-		from 75deg,
-		transparent 0deg 42deg,
-		black 42deg 349deg,
-		transparent 349deg
-	);
+	transform: translateY(-50%);
+	background: url("/cirkelbagar.svg") center / contain no-repeat;
 }
 .intro::after {
 	width: min(38vw, 35rem);
@@ -407,7 +384,6 @@ footer a:hover,
 .contact-section .contact-line {
 	border-color: #52705b;
 }
-.service-contact svg,
 .contact-section .contact-line svg,
 .intro .kicker {
 	color: var(--green);
@@ -456,6 +432,7 @@ footer {
 }
 .service-contact {
 	grid-area: 1 / 2;
+	margin-top: 2.5rem;
 	position: sticky;
 	top: 1.5rem;
 	align-self: start;
@@ -467,17 +444,38 @@ footer {
 	gap: 0.75rem;
 	min-height: 48px;
 	padding: 1rem;
-	border: 1px solid #426e53;
-	border-radius: 0.6rem;
-	background: linear-gradient(115deg, #193629, #315741);
+	justify-content: space-between;
+	border: 1px solid #91bd92;
+	border-radius: 0.85rem;
+	background: linear-gradient(120deg, #d8f6bc, #a3dea7);
+	color: #143724;
+	box-shadow: 0 6px 18px -8px #24492f50;
+}
+.service-contact strong,
+.service-contact small {
+	display: block;
+}
+.service-contact strong {
+	font-size: 1.15rem;
+	letter-spacing: -0.025em;
+}
+.service-contact small {
+	margin-top: 0.15rem;
+	font-size: 0.84rem;
+}
+.contact-arrow {
+	display: grid;
+	place-items: center;
+	flex: none;
+	width: 2.3rem;
+	height: 2.3rem;
+	border-radius: 50%;
+	background: #173b29;
 	color: white;
-	box-shadow: 0 3px 10px #14291a14;
 }
 .service-contact a:hover {
-	background: #214530;
-}
-.service-contact svg:last-child {
-	margin-left: auto;
+	background: #c0efaf;
+	box-shadow: 0 5px 16px -5px #24492f55;
 }
 .service-details section {
 	scroll-margin-top: 1rem;
@@ -510,11 +508,19 @@ footer {
 	margin-block: 1rem;
 }
 @media (max-width: 900px) {
+	.service-contact small {
+		display: none;
+	}
+	.contact-arrow {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
 	.service-details {
 		display: block;
 	}
 	.service-contact {
 		top: 73px;
+		margin-top: 0;
 		padding-block: 0.4rem;
 		display: flex;
 		justify-content: flex-end;
