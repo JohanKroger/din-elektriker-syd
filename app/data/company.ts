@@ -1,8 +1,8 @@
 export const company = {
 	name: "Din Elektriker Syd AB",
 	person: "Johan Kröger",
-	phone: "",
-	email: "",
+	phone: "+46 76 101 57 17",
+	email: "info@desyd.se",
 	organizationNumber: "",
 	// Ange den publika HTTPS-adressen före lansering. CF_PAGES_URL stöder förhandsbyggen.
 	domain: "",
