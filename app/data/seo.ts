@@ -6,14 +6,12 @@ export function pageMeta(
 	description: string,
 	path: string,
 ): Metadata {
-	const title = `${heading} | ${company.name}`;
 	const url = siteUrl ? siteUrl + path : undefined;
 	return {
-		title,
 		description,
 		alternates: url ? { canonical: url } : undefined,
 		openGraph: {
-			title,
+			title: `${heading} | ${company.name}`,
 			description,
 			locale: "sv_SE",
 			type: "website",

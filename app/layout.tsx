@@ -4,6 +4,8 @@ import { Footer } from "./components/Sections";
 import { company, siteUrl } from "./data/company";
 import "./globals.css";
 
+export const metadata = { title: "Din Elektriker Syd" };
+
 const business = {
 	"@context": "https://schema.org",
 	"@type": "Electrician",
