@@ -90,6 +90,8 @@ export function Footer() {
 						{company.address.streetAddress}
 						<br />
 						{company.address.postalCode} {company.address.addressLocality}
+						<br />
+						Org.nr {company.organizationNumber}
 					</p>
 					<p>
 						{company.phone ? (
@@ -122,8 +124,6 @@ export function Footer() {
 			</div>
 			<div className="wrap copyright">
 				© {new Date().getFullYear()} {company.name}
-				{company.organizationNumber &&
-					` · Org.nr ${company.organizationNumber}`}
 			</div>
 		</footer>
 	);
