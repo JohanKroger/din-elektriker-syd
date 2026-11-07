@@ -116,7 +116,7 @@ export function Footer() {
 					<strong>Registrerat elföretag</strong>
 					<p>Kontrollera företagets registrering hos Elsäkerhetsverket.</p>
 					<a className="text-link" href={company.registry}>
-						Kolla elföretaget <Icon name="diagonal" size={15} />
+						Se vår registrering <Icon name="diagonal" size={15} />
 					</a>
 				</div>
 			</div>

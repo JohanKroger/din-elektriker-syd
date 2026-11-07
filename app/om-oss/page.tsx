@@ -35,7 +35,7 @@ export default function About() {
 						Elektriker Syd AB är registrerat hos Elsäkerhetsverket.
 					</p>
 					<a className="text-link" href={company.registry}>
-						Kolla elföretaget ↗
+						Se vår registrering hos Elsäkerhetsverket ↗
 					</a>
 				</div>
 			</section>
