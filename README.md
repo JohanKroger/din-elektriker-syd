@@ -1,24 +1,36 @@
 # Din Elektriker Syd AB
 
-Responsiv testsida med Next.js App Router, TypeScript och Tailwind CSS.
+Statisk företagswebbplats med Next.js App Router, TypeScript och Tailwind CSS.
 
-## Starta lokalt
+## Lokal utveckling
 
-Använd Node.js 24 och npm. Kör i projektmappen:
+Använd Node.js 24. Kör i projektmappen med PowerShell:
 
-```sh
-npm ci
-npm run dev
+```powershell
+npm.cmd ci
+npm.cmd run dev
 ```
 
-Öppna http://localhost:3000 (eller adressen som terminalen visar). Startsidan finns i `app/page.tsx`.
+Öppna http://localhost:3000 eller adressen i terminalen.
 
-## Kontrollera och bygg
+## Innehåll
 
-```sh
-npm run typecheck
-npm run lint
-npm run build
+- `app/data/company.ts` innehåller kontaktuppgifter, organisationsnummer, domän och navigation. Ange telefon med landsnummer. Tomma kontaktfält visar platshållare. När uppgifterna fylls i aktiveras telefon- och e-postlänkar vid nästa bygge.
+- `app/data/services.ts` innehåller tjänsternas texter och ankare.
+- `app/data/projects.ts` innehåller godkända referensprojekt. Startsidan visar upp till tre. Projektsidan visar alla.
+- `app/data/seo.ts` skapar sidmetadata. Den bekräftade domänen används för canonical, delningsbilder och sitemap. När domänen saknas används Cloudflares byggvariabel `CF_PAGES_URL` om den finns. Utan någon känd URL saknar sitemap poster.
+- `app/page.tsx` är startsidan. Undersidorna ligger i kataloger under `app/`. Gemensamma komponenter finns i `app/components/`.
+
+## Bilder
+
+`public/logotyp.png` är företagets original. Fotografiet [Elcentral](https://commons.wikimedia.org/wiki/File:Elcentral.jpg) av Hulda Mellgren är frigivet till public domain. [Modern Kitchen](https://commons.wikimedia.org/wiki/File:Modern_Kitchen.jpg) av Pbroks13 används under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Bilderna har beskurits, skalats och konverterats till WebP. Köksbildens bearbetning har samma licens.
+
+## Kontroll och statisk export
+
+```powershell
+npm.cmd run typecheck
+npm.cmd run lint
+npm.cmd run build
 ```
 
-Next.js exporterar sidor och resurser till `out/`. För Cloudflare Pages är byggkommandot `npm run build` och publiceringsmappen `out`. Startsidan finns i `out/index.html`.
+Cloudflare Pages kan använda byggkommandot `npm run build` och katalogen `out`. Publik hosting kräver endast de exporterade filerna.
