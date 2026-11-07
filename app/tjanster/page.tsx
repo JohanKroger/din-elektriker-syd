@@ -15,20 +15,26 @@ export default function ServicesPage() {
 				reda ut vad som behövs och vad som passar din anläggning.
 			</Intro>
 			<div className="wrap service-details">
-				{services.map((s) => (
-					<section key={s.id} id={s.id}>
-						<span className="icon-box">
-							<Icon name={s.icon} />
-						</span>
-						<h2>{s.title}</h2>
-						<div>
-							<p>{s.detail}</p>
-							<a className="text-link" href="/kontakt">
-								Kontakta oss <Icon name="arrow" size={16} />
-							</a>
-						</div>
-					</section>
-				))}
+				<aside className="service-contact" aria-label="Kontakt om tjänster">
+					<a href="/kontakt">
+						<Icon name="mail" />
+						<strong>Kontakta oss</strong>
+						<Icon name="arrow" size={18} />
+					</a>
+				</aside>
+				<div className="service-list">
+					{services.map((s) => (
+						<section key={s.id} id={s.id}>
+							<span className="icon-box">
+								<Icon name={s.icon} />
+							</span>
+							<h2>{s.title}</h2>
+							<div>
+								<p>{s.detail}</p>
+							</div>
+						</section>
+					))}
+				</div>
 			</div>
 			<section id="skattereduktion" className="area story-bg">
 				<div className="wrap">
