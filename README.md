@@ -23,7 +23,7 @@ npm.cmd run dev
 
 ## Bilder
 
-`public/logotyp.png` är företagets tillhandahållna original. `public/elcentral.webp` och `public/belysning.webp` är AI-genererade illustrationsbilder skapade för detta projekt med OpenAI ImageGen. Inga stockbilder eller externa bildlicenser används. Byt ut illustrationerna mot godkända företagsbilder när sådana finns.
+`public/logotyp.png` är företagets original. Fotografiet [Elcentral](https://commons.wikimedia.org/wiki/File:Elcentral.jpg) av Hulda Mellgren är frigivet till public domain. [Modern Kitchen](https://commons.wikimedia.org/wiki/File:Modern_Kitchen.jpg) av Pbroks13 används under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Bilderna har beskurits, skalats och konverterats till WebP. Köksbildens bearbetning har samma licens.
 
 ## Kontroll och statisk export
 

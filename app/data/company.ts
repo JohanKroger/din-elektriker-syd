@@ -3,7 +3,13 @@ export const company = {
 	person: "Johan Kröger",
 	phone: "+46 76 101 57 17",
 	email: "info@desyd.se",
-	organizationNumber: "",
+	organizationNumber: "559540-7692",
+	address: {
+		streetAddress: "Skarnberga 661",
+		postalCode: "247 91",
+		addressLocality: "Södra Sandby",
+		addressCountry: "SE",
+	},
 	// Ange den publika HTTPS-adressen före lansering. CF_PAGES_URL stöder förhandsbyggen.
 	domain: "",
 	registry: "https://www.elsakerhetsverket.se/kollaelforetaget/",

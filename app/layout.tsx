@@ -11,9 +11,11 @@ const business = {
 	url: siteUrl || undefined,
 	telephone: company.phone || undefined,
 	email: company.email || undefined,
+	identifier: company.organizationNumber,
+	address: { "@type": "PostalAddress", ...company.address },
 	areaServed: {
 		"@type": "Place",
-		name: "Södra Sandby med omnejd, cirka 60 km",
+		name: "Södra Sandby med omnejd",
 	},
 };
 export default function Layout({ children }: { children: ReactNode }) {

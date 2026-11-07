@@ -1,3 +1,4 @@
+import { KitchenPhoto } from "./components/KitchenPhoto";
 import Image from "next/image";
 import { Icon } from "./components/Icon";
 import { Area, ContactSection, ProjectList } from "./components/Sections";
@@ -7,16 +8,12 @@ import { pageMeta } from "./data/seo";
 import { services } from "./data/services";
 export const metadata = pageMeta(
 	"Elektriker i Södra Sandby med omnejd",
-	"Personlig elservice med Johan Kröger. Elinstallationer, renovering och felsökning för hem och företag i Södra Sandby och runt Lund.",
+	"Personlig elservice i Skåne. Elinstallationer, renovering och felsökning för hem och företag i Södra Sandby och runt Lund.",
 	"/",
 );
 const strengths = [
 	["bolt", "15 års erfarenhet", "Inom elservice och renovering."],
-	[
-		"shield",
-		"Auktoriserad elinstallatör",
-		"Johan Kröger, med personlig auktorisation.",
-	],
+	["shield", "Registrerat elföretag", "Registrerat hos Elsäkerhetsverket."],
 	["person", "Personlig kontakt", "Samma elektriker genom hela uppdraget."],
 ] as const;
 export default function Home() {
@@ -26,7 +23,7 @@ export default function Home() {
 				<div className="hero-photo">
 					<Image
 						src="/elcentral.webp"
-						alt="Närbild av säkringar och ledningar i en elcentral"
+						alt="Elcentral med huvudbrytare, dvärgbrytare och jordfelsbrytare"
 						width={1122}
 						height={1402}
 						priority
@@ -44,13 +41,13 @@ export default function Home() {
 						</h1>
 						<p className="hero-intro">
 							Elinstallationer, service och renovering för hem och företag. Hos
-							Din Elektriker Syd har du direktkontakt med Johan Kröger från
-							start till mål.
+							Din Elektriker Syd har du direktkontakt med elektrikern som utför
+							arbetet.
 						</p>
 						<div className="actions">
 							<a className="button" href={phoneHref || "/kontakt"}>
 								<Icon name={phoneHref ? "phone" : "mail"} size={18} />
-								{phoneHref ? "Ring Johan" : "Kontakta Johan"}
+								{phoneHref ? "Ring oss" : "Kontakta oss"}
 							</a>
 							<a className="button outline" href="/tjanster">
 								Våra tjänster <Icon name="arrow" size={17} />
@@ -98,29 +95,27 @@ export default function Home() {
 						</a>
 					))}
 				</div>
+				<a className="text-link" href="/tjanster#skattereduktion">
+					ROT och grön teknik <Icon name="arrow" size={16} />
+				</a>
 			</section>
 			<section className="story-bg">
 				<div className="wrap story">
-					<Image
-						src="/belysning.webp"
-						alt="Illustrativ miljöbild av belysningen i ett kök"
-						width={1200}
-						height={800}
-					/>
+					<KitchenPhoto />
 					<div>
-						<p className="kicker">Om Johan Kröger</p>
+						<p className="kicker">Om företaget</p>
 						<h2>En elektriker som lyssnar.</h2>
 						<p>
-							Efter 15 år med service och renovering vet Johan hur olika två
-							uppdrag kan vara. Han börjar med dina önskemål och går igenom
-							vilka lösningar som passar platsen.
+							När du anlitar oss går vi först igenom vad du vill förändra. Sedan
+							tittar vi på den befintliga elen och föreslår lösningar som passar
+							din bostad eller lokal.
 						</p>
 						<p>
-							Johan är auktoriserad elinstallatör och Din Elektriker Syd AB är
+							Vår elinstallatör är auktoriserad och Din Elektriker Syd AB är
 							registrerat hos Elsäkerhetsverket.
 						</p>
 						<a className="text-link" href="/om-oss">
-							Lär känna Johan <Icon name="arrow" />
+							Mer om företaget <Icon name="arrow" />
 						</a>
 					</div>
 				</div>

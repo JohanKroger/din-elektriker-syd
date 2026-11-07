@@ -50,7 +50,7 @@ export function Header() {
 				<div className="header-actions">
 					<a className="button small" href={phoneHref || "/kontakt"}>
 						<Icon name={phoneHref ? "phone" : "mail"} size={16} />
-						{phoneHref ? "Ring Johan" : "Kontakta oss"}
+						{phoneHref ? "Ring oss" : "Kontakta oss"}
 					</a>
 					<button
 						ref={toggle}

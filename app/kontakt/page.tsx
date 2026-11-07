@@ -1,4 +1,5 @@
 import { Area, ContactLinks, Intro } from "../components/Sections";
+import { company } from "../data/company";
 import { pageMeta } from "../data/seo";
 export const metadata = pageMeta(
 	"Kontakta Johan Kröger",
@@ -15,8 +16,14 @@ export default function Contact() {
 			<section className="wrap section split">
 				<div>
 					<p className="kicker">Din Elektriker Syd AB</p>
-					<h2>Johan Kröger</h2>
-					<p>Auktoriserad elinstallatör i Södra Sandby.</p>
+					<h2>{company.person}</h2>
+					<p>Auktoriserad elinstallatör och kontaktperson.</p>
+					<p>
+						{company.address.streetAddress}, {company.address.postalCode}{" "}
+						{company.address.addressLocality}
+						<br />
+						Org.nr {company.organizationNumber}
+					</p>
 				</div>
 				<ContactLinks />
 			</section>

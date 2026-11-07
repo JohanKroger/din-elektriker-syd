@@ -29,7 +29,7 @@ export function ContactLinks() {
 				[
 					[
 						"phone",
-						"Ring Johan",
+						"Ring oss",
 						company.phone,
 						phoneHref,
 						"Telefonnummer kommer",
@@ -73,9 +73,7 @@ export function ContactSection() {
 				<div>
 					<p className="kicker light">Kontakt</p>
 					<h2>Behöver du hjälp med elen?</h2>
-					<p>
-						Berätta för Johan vad du planerar eller vad som behöver ses över.
-					</p>
+					<p>Berätta för oss vad du planerar eller vad som behöver ses över.</p>
 				</div>
 				<ContactLinks />
 			</div>
@@ -89,9 +87,9 @@ export function Footer() {
 				<div>
 					<strong>{company.name}</strong>
 					<p>
-						{company.person}
+						{company.address.streetAddress}
 						<br />
-						Södra Sandby med omnejd
+						{company.address.postalCode} {company.address.addressLocality}
 					</p>
 					<p>
 						{company.phone ? (
@@ -158,8 +156,8 @@ export function Area() {
 				</div>
 				<div>
 					<p>
-						Johan hjälper privatpersoner, företag, bostadsrättsföreningar och
-						fastighetsägare inom ungefär sex mil från Södra Sandby.
+						Vi hjälper privatpersoner, företag, bostadsrättsföreningar och
+						fastighetsägare i Södra Sandby med omnejd.
 					</p>
 					<p>
 						Lund, Dalby, Staffanstorp, Eslöv och Malmö är några av orterna i

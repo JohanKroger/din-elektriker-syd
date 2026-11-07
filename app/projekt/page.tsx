@@ -25,7 +25,7 @@ export default function ProjectsPage() {
 						<h2>Projektbilder kommer.</h2>
 						<p>
 							Vi publicerar beskrivningar och bilder när materialet har godkänts
-							av kunderna. Under tiden kan du läsa om vilka arbeten Johan
+							av kunderna. Under tiden kan du läsa om vilka arbeten vi
 							hjälper till med.
 						</p>
 						<a href="/tjanster" className="text-link">
