@@ -160,12 +160,34 @@ footer a:hover,
 .toggle {
 	display: none;
 }
-.hero {
-	background: #10211a;
+.hero,
+.intro {
+	background: linear-gradient(110deg, #101f19 12%, #17382a 62%, #2c5943);
 	color: white;
 	overflow: hidden;
 	isolation: isolate;
 	position: relative;
+}
+.hero::after,
+.intro::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	pointer-events: none;
+	width: min(52vw, 54rem);
+	aspect-ratio: 1;
+	top: 50%;
+	right: -8%;
+	transform: translateY(-50%) rotate(-24deg);
+	border-radius: 50%;
+	background:
+		radial-gradient(circle closest-side, transparent 49%, #80d69780 49.3%, #80d69780 52%, transparent 52.3%, transparent 64%, #a9e4b65c 64.3%, #a9e4b65c 65%, transparent 65.3%, transparent 81%, #90cda440 81.3%, #90cda440 81.6%, transparent 82%),
+		linear-gradient(125deg, #8dda9b10, transparent 70%);
+	mask-image: conic-gradient(from 75deg, transparent 0deg 42deg, black 42deg 349deg, transparent 349deg);
+}
+.intro::after {
+	width: min(38vw, 35rem);
+	opacity: .55;
 }
 
 .hero-inner {
@@ -323,7 +345,7 @@ footer a:hover,
 	align-items: center;
 }
 .story-bg {
-	background: var(--wash);
+	background: linear-gradient(115deg, #e6efe6, #f7f9f5 72%);
 }
 .story h3 {
 	margin-top: 1.7rem;
@@ -333,10 +355,9 @@ footer a:hover,
 .story .text-link {
 	margin-top: 0.9rem;
 }
-.contact-section,
-.intro {
+.contact-section {
 	color: white;
-	background: var(--forest);
+	background: linear-gradient(112deg, var(--forest) 20%, #264c38);
 }
 .contact-section .split p:not(.kicker),
 .intro .lead {
@@ -487,6 +508,13 @@ footer {
 	}
 }
 @media (max-width: 650px) {
+	.hero::after,
+	.intro::after {
+		top: 12%;
+		right: -28%;
+		width: 72vw;
+		opacity: .28;
+	}
 	.wrap {
 		width: 89%;
 	}

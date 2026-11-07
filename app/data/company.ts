@@ -12,7 +12,7 @@ export const company = {
 	},
 	// Ange den publika HTTPS-adressen före lansering. CF_PAGES_URL stöder förhandsbyggen.
 	domain: "",
-	registry: "https://www.elsakerhetsverket.se/kollaelforetaget/",
+	registry: "https://elsakerhetsverket.se/kolla-elforetaget/elforetag?id=12102849",
 };
 export const siteUrl = (
 	company.domain ||
