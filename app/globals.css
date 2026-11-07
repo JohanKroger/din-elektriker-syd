@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root { color: #17372a; background: white; font-family: Arial, sans-serif; }
+.frame { width: min(85%, 76rem); margin-inline: auto; }
+.logo { display: block; position: relative; overflow: hidden; width: 11rem; aspect-ratio: 2.75; }
+.logo img { position: absolute; width: 140%; max-width: none; left: -23%; top: -63%; }
+.nav-link { padding: .5rem .1rem; border-bottom: 2px solid #20843f; font-weight: 600; }
+.hero { position: relative; overflow: hidden; isolation: isolate; background: #f4f8f1; padding-block: clamp(6rem, 13vw, 12rem); }
+h1 { font-family: Georgia, serif; font-size: clamp(2.7rem, 6.8vw, 6.8rem); letter-spacing: -.055em; line-height: 1.03; }
+h1 span { color: #227438; }
+.subtitle { margin-top: 1.75rem; max-width: 32rem; font-size: clamp(1.1rem, 2.2vw, 1.55rem); line-height: 1.45; }
+.notice { margin-top: 3rem; border-left: 3px solid #54a662; padding-left: 1rem; color: #395745; }
+.rings { position: absolute; right: -18vw; width: 47vw; aspect-ratio: 1; border: 2.2vw solid #d2e8ce; border-radius: 50%; transform: rotate(-24deg); border-right-color: transparent; }
+.rings::after { content: ""; position: absolute; inset: 13%; border: 1vw solid #bedfbc; border-right-color: transparent; border-radius: 50%; }
+a:focus-visible { outline: 3px solid #237735; outline-offset: 4px; }
+@media (max-width: 54rem) {
+  .rings { width: 15rem; right: -9rem; top: -6rem; opacity: .55; }
+}
