@@ -1,0 +1,13 @@
+/node_modules/
+/.next/
+/out/
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+.npmrc
+*.pem
+*.key
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
