@@ -130,8 +130,12 @@ export function Footer() {
 			<div className="wrap copyright">
 				© {new Date().getFullYear()} {company.name}
 				{" · "}
-				<a href="/kontakt#personuppgifter" className="underline">
-					Personuppgifter
+				<a
+					id="personuppgifter"
+					href="/integritetsinformation"
+					className="underline"
+				>
+					Integritetsinformation
 				</a>
 			</div>
 		</footer>
