@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ExternalLink } from "../components/ExternalLink";
 import { Area, ContactSection, Intro } from "../components/Sections";
 import { pageMeta } from "../data/seo";
@@ -41,6 +42,26 @@ export default function About() {
 				</div>
 			</section>
 			<Area />
+			<section
+				id="mustaschkampen"
+				className="wrap section border-t border-[var(--line)]"
+			>
+				<h2>Vi stödjer Mustaschkampen 2026</h2>
+				<p className="mt-4 max-w-2xl">
+					Din Elektriker Syd AB stödjer Prostatacancerförbundets kampanj för
+					forskning om prostatacancer.
+				</p>
+				<Image
+					src="/mustaschkampen-2026.webp"
+					width={1800}
+					height={600}
+					className="my-4 h-auto w-full"
+					alt="Mustaschkampens blå kampanjbild med vit mustasch och budskapet ”Vi stödjer kampen!”"
+				/>
+				<ExternalLink href="https://www.mustaschkampen.se/">
+					Läs mer om Mustaschkampen
+				</ExternalLink>
+			</section>
 			<ContactSection />
 		</>
 	);
