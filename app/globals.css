@@ -445,10 +445,10 @@ footer {
 	min-height: 48px;
 	padding: 1rem;
 	justify-content: space-between;
-	border: 1px solid #91bd92;
+	border: 1px solid var(--forest);
 	border-radius: 0.85rem;
-	background: linear-gradient(120deg, #d8f6bc, #a3dea7);
-	color: #143724;
+	background: var(--forest);
+	color: white;
 	box-shadow: 0 6px 18px -8px #24492f50;
 }
 .service-contact strong,
@@ -470,11 +470,11 @@ footer {
 	width: 2.3rem;
 	height: 2.3rem;
 	border-radius: 50%;
-	background: #173b29;
-	color: white;
+	background: var(--green);
+	color: var(--forest);
 }
 .service-contact a:hover {
-	background: #c0efaf;
+	background: var(--ink);
 	box-shadow: 0 5px 16px -5px #24492f55;
 }
 .service-details section {
