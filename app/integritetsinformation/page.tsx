@@ -10,12 +10,12 @@ export const metadata = pageMeta(
 export default function Privacy() {
 	return (
 		<section className="wrap section">
-			<div className="max-w-3xl space-y-4">
+			<div className="mx-auto max-w-3xl space-y-4">
 				<ReturnLink />
 				<h1 style={{ fontSize: "clamp(1.7rem, 6vw, 4rem)" }}>
 					Integritetsinformation
 				</h1>
-				<p>
+				<p className="pt-2">
 					{company.name} är personuppgiftsansvarigt. Du når oss på{" "}
 					<a className="underline" href={`mailto:${company.email}`}>
 						{company.email}
