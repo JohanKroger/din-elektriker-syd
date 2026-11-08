@@ -3,6 +3,8 @@
 :root {
 	--ink: #17231d;
 	--forest: #172b22;
+	--banner-end: #2c5943;
+	--button-hover: #396b50;
 	--green: #85e79a;
 	--muted: #4d5e53;
 	--line: #d9e1da;
@@ -151,18 +153,18 @@ footer a:hover,
 .button.small {
 	min-height: 43px;
 	font-size: 0.88rem;
-	background: #193729;
+	background: var(--banner-end);
 	color: white;
 }
 .button.small:hover {
-	background: #315841;
+	background: var(--button-hover);
 }
 .toggle {
 	display: none;
 }
 .hero,
 .intro {
-	background: linear-gradient(110deg, #101f19 12%, #17382a 62%, #2c5943);
+	background: linear-gradient(110deg, #101f19 12%, #17382a 62%, var(--banner-end));
 	color: white;
 	overflow: hidden;
 	isolation: isolate;
@@ -445,9 +447,9 @@ footer {
 	min-height: 48px;
 	padding: 1rem;
 	justify-content: space-between;
-	border: 1px solid var(--forest);
+	border: 1px solid var(--banner-end);
 	border-radius: 0.85rem;
-	background: var(--forest);
+	background: var(--banner-end);
 	color: white;
 	box-shadow: 0 6px 18px -8px #24492f50;
 }
@@ -474,7 +476,7 @@ footer {
 	color: var(--forest);
 }
 .service-contact a:hover {
-	background: var(--ink);
+	background: var(--button-hover);
 	box-shadow: 0 5px 16px -5px #24492f55;
 }
 .service-details section {
