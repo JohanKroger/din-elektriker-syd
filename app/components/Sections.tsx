@@ -93,6 +93,8 @@ export function Footer() {
 						{company.address.postalCode} {company.address.addressLocality}
 						<br />
 						Org.nr {company.organizationNumber}
+						<br />
+						Styrelsens säte: {company.registeredOffice}
 					</p>
 					<p>
 						{company.phone ? (
@@ -122,10 +124,15 @@ export function Footer() {
 						Se vår registrering
 					</ExternalLink>
 					<p>Företaget är registrerat för moms och godkänt för F-skatt.</p>
+					<p>Momsreg.nr {company.vatNumber}</p>
 				</div>
 			</div>
 			<div className="wrap copyright">
 				© {new Date().getFullYear()} {company.name}
+				{" · "}
+				<a href="/kontakt#personuppgifter" className="underline">
+					Personuppgifter
+				</a>
 			</div>
 		</footer>
 	);

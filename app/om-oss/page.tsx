@@ -39,6 +39,9 @@ export default function About() {
 					<ExternalLink href={company.registry}>
 						Se vår registrering hos Elsäkerhetsverket
 					</ExternalLink>
+					<ExternalLink href="https://www.elsakerhetsverket.se/om-oss/lag-och-ratt/regler-efter-omrade/regler-elinstallationsarbete/">
+						Regler för elinstallationsarbete
+					</ExternalLink>
 				</div>
 			</section>
 			<Area />

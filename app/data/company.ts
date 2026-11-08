@@ -1,18 +1,20 @@
 export const company = {
 	name: "Din Elektriker Syd AB",
 	person: "Johan Kröger",
-	phone: "+46 76 101 57 17",
+	phone: "076-101 57 17",
 	email: "info@desyd.se",
 	organizationNumber: "559540-7692",
+	registeredOffice: "Lund",
+	vatNumber: "SE559540769201",
 	address: {
 		streetAddress: "Skarnberga 661",
 		postalCode: "247 91",
 		addressLocality: "Södra Sandby",
 		addressCountry: "SE",
 	},
-	// Ange den publika HTTPS-adressen före lansering. CF_PAGES_URL stöder förhandsbyggen.
-	domain: "",
-	registry: "https://elsakerhetsverket.se/kolla-elforetaget/elforetag?id=12102849",
+	domain: "https://desyd.se",
+	registry:
+		"https://elsakerhetsverket.se/kolla-elforetaget/elforetag?id=12102849",
 };
 export const siteUrl = (
 	company.domain ||
@@ -27,6 +29,6 @@ export const navigation = [
 	["/kontakt", "Kontakt"],
 ] as const;
 export const phoneHref = company.phone
-	? `tel:${company.phone.replace(/[\s()-]/g, "")}`
+	? `tel:${company.phone.replace(/[\s()-]/g, "").replace(/^0/, "+46")}`
 	: undefined;
 export const emailHref = company.email ? `mailto:${company.email}` : undefined;
