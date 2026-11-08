@@ -47,7 +47,7 @@ export default function About() {
 				className="wrap section border-t border-[var(--line)]"
 			>
 				<h2>Vi stödjer Mustaschkampen 2026</h2>
-				<p className="mt-4 max-w-2xl">
+				<p className="mt-1! max-w-2xl">
 					Din Elektriker Syd AB stödjer Prostatacancerförbundets kampanj för
 					forskning om prostatacancer.
 				</p>
