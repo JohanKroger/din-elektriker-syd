@@ -121,6 +121,7 @@ export function Footer() {
 					<ExternalLink href={company.registry}>
 						Se vår registrering
 					</ExternalLink>
+					<p>Företaget är registrerat för moms och godkänt för F-skatt.</p>
 				</div>
 			</div>
 			<div className="wrap copyright">
