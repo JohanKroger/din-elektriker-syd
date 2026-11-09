@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const startDate = "2011-11-09";
+const startDate = "2011-08-01";
 const stockholmDate = new Intl.DateTimeFormat("sv-SE", {
 	timeZone: "Europe/Stockholm",
 	year: "numeric",
