@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { Experience } from "../components/Experience";
 import { ExternalLink } from "../components/ExternalLink";
 import { Area, ContactSection, Intro } from "../components/Sections";
 import { pageMeta } from "../data/seo";
 import { company } from "../data/company";
 export const metadata = pageMeta(
 	"Om företaget",
-	"Lär känna Din Elektriker Syd AB, ett elföretag med 15 års erfarenhet av service och renovering i Södra Sandby med omnejd.",
+	"Lär känna Din Elektriker Syd AB i Södra Sandby. Vår elektriker har erfarenhet av elservice och renovering sedan 2011.",
 	"/om-oss",
 );
 export default function About() {
@@ -23,8 +24,8 @@ export default function About() {
 				</div>
 				<div>
 					<p>
-						Med 15 år inom service och renovering har vi erfarenhet av arbete i
-						befintliga bostäder och lokaler. Det börjar med att du berättar vad
+						Vår elektriker har arbetat med service och renovering i bostäder
+						och lokaler <Experience duration />. Det börjar med att du berättar vad
 						som fungerar i dag och vad du vill förändra.
 					</p>
 					<p>

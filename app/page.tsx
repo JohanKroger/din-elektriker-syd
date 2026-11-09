@@ -1,3 +1,4 @@
+import { Experience } from "./components/Experience";
 import { Icon } from "./components/Icon";
 import { Area, ContactSection, ProjectList } from "./components/Sections";
 import { phoneHref } from "./data/company";
@@ -10,7 +11,7 @@ export const metadata = pageMeta(
 	"/",
 );
 const strengths = [
-	["bolt", "15 års erfarenhet", "Inom elservice och renovering."],
+	["bolt", <Experience key="experience" />, "Inom elservice och renovering."],
 	["shield", "Registrerat elföretag", "Registrerat hos Elsäkerhetsverket."],
 	["person", "Personlig kontakt", "Samma elektriker genom hela uppdraget."],
 ] as const;
@@ -48,7 +49,7 @@ export default function Home() {
 			<section aria-label="Erfarenhet och kompetens" className="trust">
 				<div className="wrap trust-grid">
 					{strengths.map(([icon, title, copy]) => (
-						<div key={title}>
+						<div key={icon}>
 							<span className="trust-icon">
 								<Icon name={icon} size={23} />
 							</span>
