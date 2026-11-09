@@ -51,14 +51,25 @@ export default function Privacy() {
 					dig.
 				</p>
 				<p>
-					Vår e-postleverantör behandlar uppgifter i mejl. Hur länge uppgifter
-					behöver sparas beror på ärendet, exempelvis om en fråga leder till ett
-					uppdrag eller om uppgifterna behövs för att hantera ett rättsligt
-					anspråk. För bokföringsunderlag gäller bokföringslagens krav.
+					<strong>Så hanterar vi kunduppgifter.</strong> Mejlen finns kvar i
+					Microsoft 365. Inom företaget har bara ägaren tillgång till
+					brevlådan. Vid uppdrag registrerar vi de uppgifter som behövs för
+					arbetsordern i Mowin och för fakturering och bokföring i Fortnox.
+					Vår redovisningsbyrå kan ta del av uppgifterna i Fortnox.
 				</p>
 				<p>
-					<strong>Dina rättigheter.</strong> Du kan kontakta oss för att begära
-					tillgång eller rättelse. Du kan också invända mot behandling som
+					<strong>Hur länge behövs uppgifterna?</strong> Det beror på om vi
+					behöver dem för att besvara en fråga, slutföra ett uppdrag eller
+					hantera ett rättsligt anspråk. För bokföringsunderlag gäller
+					bokföringslagens krav. Vi har i dag ingen fast rutin för rensning.
+				</p>
+				<p>
+					<strong>Dina rättigheter.</strong> Mejla{" "}
+					<a className="underline" href={`mailto:${company.email}`}>
+						{company.email}
+					</a>{" "}
+					om du vill veta vilka uppgifter vi har om dig eller be oss rätta dem.
+					Företagets ägare tar hand om din begäran. Du kan också invända mot behandling som
 					bygger på berättigat intresse och, när villkoren är uppfyllda, begära
 					radering, begränsning eller dataportabilitet. Du har rätt att klaga
 					hos Integritetsskyddsmyndigheten (IMY).
